@@ -1,0 +1,84 @@
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 80px;
+  
+    background-color: rgb(22, 175, 221);
+  }
+/* + saját*/
+
+
+header img{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 15px;
+    width: 180px;
+    height: auto;
+  
+    fill: #ffce00;
+  }
+
+/* -sjaát vége- */  
+
+
+
+  header::before,
+  header::after{
+    content: "hahaahjhjd";
+    position: absolute;
+    display: block;
+    width: calc(50% - 70px);
+    height: 4px;
+    bottom: 0;
+    background-color: white;
+  }
+  
+  header::before{
+    left: 0;
+  }
+  
+  header::after{
+    right: 0;
+  }
+  
+  header:hover{
+    cursor: pointer;
+    background-color: gold;
+  }
+  
+  section{
+    width: 100%;
+    font-size: 60px;
+  }
+  
+  #welcome{
+    position: absolute;
+    top:0;
+    height: 100vh;
+    background-color: rgb(29, 177, 15);
+  }
+  
+  #blabla{
+    position: relative;
+    margin-top: 100vh;
+    min-height: 100vh;
+    background-color: rgb(147, 16, 151);
+  }
+  
+  #blabla li{
+    display: inline;
+  }
+  
+  #blabla li:not(:last-child)::after{
+    content: "•->•";
+  }
